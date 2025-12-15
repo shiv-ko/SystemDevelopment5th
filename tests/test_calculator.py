@@ -416,7 +416,9 @@ class TestInvalidInputException:
 
     # Too large value tests (> 1,000,000)
     def test_add_with_too_large_first_argument(self):
-        """Test that add raises InvalidInputException when first argument is too large."""
+        """Test that add raises InvalidInputException when first argument
+        is too large.
+        """
         # Arrange
         calc = Calculator()
         a = 1000001  # Exceeds MAX_VALUE
@@ -427,7 +429,9 @@ class TestInvalidInputException:
             calc.add(a, b)
 
     def test_add_with_too_large_second_argument(self):
-        """Test that add raises InvalidInputException when second argument is too large."""
+        """Test that add raises InvalidInputException when second argument
+        is too large.
+        """
         # Arrange
         calc = Calculator()
         a = 1
@@ -438,7 +442,9 @@ class TestInvalidInputException:
             calc.add(a, b)
 
     def test_subtract_with_too_large_value(self):
-        """Test that subtract raises InvalidInputException when value is too large."""
+        """Test that subtract raises InvalidInputException when value is
+        too large.
+        """
         # Arrange
         calc = Calculator()
         a = 1000001  # Exceeds MAX_VALUE
@@ -449,7 +455,9 @@ class TestInvalidInputException:
             calc.subtract(a, b)
 
     def test_multiply_with_too_large_value(self):
-        """Test that multiply raises InvalidInputException when value is too large."""
+        """Test that multiply raises InvalidInputException when value is
+        too large.
+        """
         # Arrange
         calc = Calculator()
         a = 1000001  # Exceeds MAX_VALUE
@@ -460,7 +468,9 @@ class TestInvalidInputException:
             calc.multiply(a, b)
 
     def test_divide_with_too_large_value(self):
-        """Test that divide raises InvalidInputException when value is too large."""
+        """Test that divide raises InvalidInputException when value is
+        too large.
+        """
         # Arrange
         calc = Calculator()
         a = 1000001  # Exceeds MAX_VALUE
@@ -472,7 +482,9 @@ class TestInvalidInputException:
 
     # Too small value tests (< -1,000,000)
     def test_add_with_too_small_first_argument(self):
-        """Test that add raises InvalidInputException when first argument is too small."""
+        """Test that add raises InvalidInputException when first argument
+        is too small.
+        """
         # Arrange
         calc = Calculator()
         a = -1000001  # Below MIN_VALUE
@@ -483,7 +495,9 @@ class TestInvalidInputException:
             calc.add(a, b)
 
     def test_add_with_too_small_second_argument(self):
-        """Test that add raises InvalidInputException when second argument is too small."""
+        """Test that add raises InvalidInputException when second argument
+        is too small.
+        """
         # Arrange
         calc = Calculator()
         a = 1
@@ -494,7 +508,9 @@ class TestInvalidInputException:
             calc.add(a, b)
 
     def test_subtract_with_too_small_value(self):
-        """Test that subtract raises InvalidInputException when value is too small."""
+        """Test that subtract raises InvalidInputException when value is
+        too small.
+        """
         # Arrange
         calc = Calculator()
         a = -1000001  # Below MIN_VALUE
@@ -505,7 +521,9 @@ class TestInvalidInputException:
             calc.subtract(a, b)
 
     def test_multiply_with_too_small_value(self):
-        """Test that multiply raises InvalidInputException when value is too small."""
+        """Test that multiply raises InvalidInputException when value is
+        too small.
+        """
         # Arrange
         calc = Calculator()
         a = -1000001  # Below MIN_VALUE
@@ -516,7 +534,9 @@ class TestInvalidInputException:
             calc.multiply(a, b)
 
     def test_divide_with_too_small_value(self):
-        """Test that divide raises InvalidInputException when value is too small."""
+        """Test that divide raises InvalidInputException when value is
+        too small.
+        """
         # Arrange
         calc = Calculator()
         a = -1000001  # Below MIN_VALUE

@@ -29,7 +29,8 @@ class Calculator:
         for value in values:
             if value > MAX_VALUE or value < MIN_VALUE:
                 raise InvalidInputException(
-                    f"Input value {value} is outside the valid range [{MIN_VALUE}, {MAX_VALUE}]"
+                    f"Input value {value} is outside the valid range "
+                    f"[{MIN_VALUE}, {MAX_VALUE}]"
                 )
 
     def add(self, a, b):
