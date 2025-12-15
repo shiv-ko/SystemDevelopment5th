@@ -552,6 +552,3 @@ class TestInvalidInputException:
 
         # Assert
         assert result == -1000000
-
-
-
